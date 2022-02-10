@@ -1,0 +1,90 @@
+FICHERO DE REPASO
+
+MAVEN: HERRAMIENTA JAVA 
+		-GESTIÓN DE CICLO DE VIDA DEL PROYECTO (COMPILACIÓN AL DESPLIEGUE)
+		-DEPENDECIAS (POM.XML)
+		-REPOSITORIO
+		-REPO NEXUS
+		-JENKINS/GRADLE
+		
+SPRING:	FRAMEWORK
+		- NO SOLO PARA ES WEB
+		- ANOTACIONES 
+		- REST
+		
+SERVICIOS REST Y XML
+
+POSTMAN, RESTER, ADVANCED REST CLIENT: CLIENTES PARA TESTAR SERIVIOS WEB (TRÁFICO HTTP)
+
+ATRIBUTOS IMPORTANTES DE HTTP
+
+	CABECERA
+		MÉTODO: GET(obtener, consultar), 
+				POST(crear), 
+				PUT(modificar), 
+				DELETE(borrar)
+				
+		URL: DIRECCIÓN DE DESTINO (IP, PUERTO Y PARÁMETROS)
+		CONTENT-TYPE: IDENTIFICA EL TIPO DE INFO QUE VIAJA EN EL CUERPO (extensión) TIPO MIME
+		STATUS: CÓMO LA IDO LA COSA - ESTADO DE LA COMUNICACIÓN
+		Content-Length: bytes / caracteres que van en el cuerpo
+		
+	CUERPO: INFORMACIÓN / DATOS
+			JSON
+			IMAGEN
+			TEXTO
+			PDF
+	 
+SERIALIZAR: PASO DE VARIABLE/OBJETO A TEXTO/JSON -- NECESARIO PARA TRANSIMITIR O GUARDAR INFORMACIÓN
+DESERIALIZAR: PASO DE TEXTO/JSON A VARIABLE/OBJETO
+
+CRUD: CREATE READ UPDATE DELETE --> CrudRepository <Entidad, ID>
+
+
+@Componente :Anotación que identifica una clase para que Spring la instancie automáticamente
+	@Controller - HTTP
+	@Service - Negocio
+	@Repository - BD
+	
+	
+@Transactional
+	
+/*
+	 * F ()
+	 * COMPRAR BILLETE --SERVICE (cLIENTE, TARJETA, DESTINO)
+	 * 	
+	 * 	{
+	 * 		HACER PAGO CON EL BANCO __ TABLA COBROS
+	 * 		MARCO ASIENTO RESERVADO __ TABLA TRENES
+	 * 		ACTUALIZAMOS CONTABILIDAD __ TABLA INGERSOS
+	 * }
+	 * 
+	 * TRANSACCIÓN: CONJUNTO DE OPERACIONES LÓGICAMENTE AGRUPADAS
+	 * DE TAL MANERA QUE O SE HACEN TODAS BIEN O NO SE HACE NINGUNA
+	 * 
+	
+	*/
+ResponseEnttity --> HTTP CON EL CUERPO
+Optional --> CLase envoltorio para evitar accesos a null
+? -> Tipo genérico
+	  
+LOG. para loogback (Spring Boot) tengo NIVELES DE LOG
+		
+		// de menos importante
+		TRACE 
+		DEGUB
+		INFO
+		WARN
+		ERROR
+		//a más importante
+		
+		mensaje formato loggin.pattern.console
+		
+PARA TODAS LAS ENTIDADES/MODELO/DATOS/BEANS, SOBRESCRIBIR EL MÉTODO TOSTRING -- DEBUG / LOG
+
+@Query("select u from User u where u.emailAddress = ?1") 
+DEFINIR OTRAS OPERACIONES SOBRE LA BBDD CON IDENEPDENCIA DE LA MARCA "VENDOR"
+SQL  - JPQL - HQL
+
+
+User findByEmailAddress(String emailAddress); CONSULTANDO POR EMAIL - "CONSULTAS POR PALABRA CLAVE" // "KEYWORD QUERY"

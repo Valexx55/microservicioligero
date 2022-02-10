@@ -1,0 +1,49 @@
+
+JAVA
+
+Estructura, nomenclatura estándar de un proyecto Spring Web
+Anotaciones Spring
+Eureka - Spring Cloud
+El ecosistema de Microservicios en Nube
+Anotaciones JPA
+Inyección de dependencias con Autowired
+Lob JPA
+CrudRepository
+Seguridad 
+Crear librerías jar con maven
+Balance de carga Spring Cloud Load Balancer
+Java Bean Validation
+Uso de Interfaces
+Restempalte Y FeignClient
+Diagramas modelado
+Paginación
+Función de Gateway
+
+ANGULAR
+
+Estructura, nomenclatura estándar de un proyecto Angular
+Comunicación plantilla - Componentes 
+Despertar mi interés por realizar aplicaciones cliente (sin servidor)
+Interceptores
+Literales con plantilla ($)
+Pipe
+Formularios Plantilla y Validaciones
+Funciones anónimas
+Depuración
+Foto
+Serializar
+Enrutamiento con parámetros
+Api Local Storage
+Creación Módulos
+Paginación Material
+Envío Archivos
+Ciclo de Vida de un Componente / APP
+Directivas ngIf ngFor
+i18n
+Servicios
+Observables
+BootStrap
+Diagramas modelado
+Tipos En TypeScript
+
+
